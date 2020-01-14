@@ -1,0 +1,28 @@
+﻿<Window x:Class="EmailWithFTP.SendPost"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EmailWithFTP"
+        mc:Ignorable="d"
+        Title="SendPost" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="83*"/>
+            <RowDefinition Height="300*"/>
+            <RowDefinition Height="51*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="45*"/>
+            <ColumnDefinition Width="294*"/>
+            <ColumnDefinition Width="61*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="1" Grid.RowSpan="3">
+            <TextBox x:Name="textBoxTo" Text="Кому..." TextWrapping="Wrap" Width="464" Height="30" FontSize="18"/>
+            <TextBox x:Name="textBoxTheme" Text="Тема..." TextWrapping="Wrap" Width="464" Height="30" FontSize="18"/>
+            <TextBox x:Name="textBoxValue" Text="" TextWrapping="Wrap" Width="464" Height="295" Margin="0 25 0 0"/>
+            <Button Content="Отправить" Height="39" Width="188" FontSize="20" FontWeight="Bold" Foreground="White" Background="DarkBlue" Click="Button_Click"/>
+        </StackPanel>
+
+    </Grid>
+</Window>
