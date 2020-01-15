@@ -18,7 +18,7 @@
             <ColumnDefinition Width="35*"/>
         </Grid.ColumnDefinitions>
         <StackPanel Grid.Column="1" Grid.Row="1">
-            <ListBox x:Name="listBoxPostList" Height="349"/>
+            <ListBox x:Name="listBoxPostList" Height="349" MouseDoubleClick="ShowPostList"/>
         </StackPanel>
         <Button Content="Написать письмо" Grid.Column="1" HorizontalAlignment="Left" Margin="532,351,0,0" Grid.Row="1" VerticalAlignment="Top" Height="46" Grid.RowSpan="2" Width="194" FontSize="20" FontWeight="Bold" Background="DarkBlue" Foreground="White" Click="SendNewPost"/>
 

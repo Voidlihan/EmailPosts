@@ -18,10 +18,10 @@
             <ColumnDefinition Width="61*"/>
         </Grid.ColumnDefinitions>
         <StackPanel Grid.Column="1" Grid.RowSpan="3">
+            <TextBox x:Name="textBoxFrom" Text="От..." TextWrapping="Wrap" Width="464" Height="30" FontSize="18"/>
             <TextBox x:Name="textBoxTo" Text="Кому..." TextWrapping="Wrap" Width="464" Height="30" FontSize="18"/>
-            <TextBox x:Name="textBoxTheme" Text="Тема..." TextWrapping="Wrap" Width="464" Height="30" FontSize="18"/>
             <TextBox x:Name="textBoxValue" Text="" TextWrapping="Wrap" Width="464" Height="295" Margin="0 25 0 0"/>
-            <Button Content="Отправить" Height="39" Width="188" FontSize="20" FontWeight="Bold" Foreground="White" Background="DarkBlue" Click="Button_Click"/>
+            <Button Content="Отправить" Height="39" Width="188" FontSize="20" FontWeight="Bold" Foreground="White" Background="DarkBlue" Click="Send"/>
         </StackPanel>
 
     </Grid>

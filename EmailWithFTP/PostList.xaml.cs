@@ -1,5 +1,7 @@
-﻿using System;
+﻿using MailKit.Net.Pop3;
+using System;
 using System.Collections.Generic;
+using System.Net.Mail;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -26,6 +28,12 @@ namespace EmailWithFTP
         {
             SendPost sendPost = new SendPost();
             sendPost.ShowDialog();
+        }
+
+        private void ShowPostList(object sender, MouseButtonEventArgs e)
+        {
+            MailAddress mailAddress = new MailAddress("a.esentay@mail.ru");
+            listBoxPostList.Items.Add(mailAddress.Address);
         }
     }
 }
